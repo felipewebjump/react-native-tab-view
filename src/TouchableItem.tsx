@@ -41,6 +41,7 @@ export default class TouchableItem extends React.Component<Props> {
       return (
         <TouchableNativeFeedback
           {...rest}
+          delayLongPress={2000}
           background={TouchableNativeFeedback.Ripple(pressColor, borderless)}
         >
           <View style={style}>{React.Children.only(children)}</View>
